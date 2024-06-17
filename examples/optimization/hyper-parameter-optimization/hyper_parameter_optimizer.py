@@ -46,6 +46,8 @@ args = {
 }
 args = task.connect(args)
 
+print(f'args = {args}')
+
 # Get the template task experiment that we want to optimize
 if not args['template_task_id']:
     args['template_task_id'] = Task.get_task(
